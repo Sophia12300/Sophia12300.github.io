@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>无人物流车的数据可视化</title>
+    <link rel="stylesheet" href="inedex.html" />
+</head>
+
+<body>
+    <video autoplay muted style="width:100%;">
+        <source src="images/film.mp4"> 
+    <ideo>
+    <a href="web.html">进入网页</a>
+</body>
+</html>
+<style>
+    video{
+        position: fixed;
+        right:0;
+        bottom:0;
+        min-width:100%;
+        min-height:100%;
+        width:auto;
+        height:auto;
+        z-index:-9999;
+    }
+    a{
+        width: 300px;
+        height: 65px;
+        left: 50%;
+        top: 85%;
+        position: absolute;
+        line-height: 65px;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #ffff;
+        border-radius: 50px;/*#03a9f4,#f441a5,#ffeb3b,#09a8f4*/
+        background-image: linear-gradient(to right,#85d2c3,#829eb8,#8ce4e2,#93bfc1);
+        background-size: 400%;
+        z-index: 1;
+    }
+    @keyframes sun {
+        100%{
+            background-position: -400% 0;
+        }
+    }
+    a:hover{
+        animation: sun 8s infinite;
+    }
+    a::before{
+        content:"";
+        position: absolute;
+        left:-5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        background-image: linear-gradient(to right,#85d2c3,#829eb8,#8ce4e2,#93bfc1);
+        background-size: 400%;
+        filter: blur(20px);
+        z-index: -1;
+    }
+    a:hover::before{
+        animation: sun 8s infinite;
+    }
+</style>
